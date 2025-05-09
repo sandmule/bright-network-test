@@ -4,8 +4,6 @@ This is a lightweight recommendation engine built to match members with relevant
 
 ## 🧑‍💻 Getting Started
 
-## 🧑‍💻 Getting Started
-
 ### 1. Clone and install
 ```bash
 git clone https://github.com/sandmule/bright-network-test.git
@@ -60,10 +58,10 @@ Each member should receive a list of top matching jobs, printed to the console.
 ## Design Choices & Challenges
 
 ### Simplicity First
-The scoring is deliberately lightweight — it shows understanding of language matching without overengineering (e.g. no fuzzy matching or ML).
+The scoring is deliberately lightweight, given more time could be improved with fuzzy matching or ML.
 
 ### Modularity
-Files are separated to reflect maintainable architecture, even in a small codebase:
+Files are separated to reflect maintainable architecture:
 - Business logic (matching)
 - Data validation
 - IO (API requests, logging)
@@ -76,6 +74,6 @@ Members’ bios are free-form, so assumptions had to be made:
 - Only predefined categories are matched
 - No stemming, typo correction, or semantic similarity
 
-In production, this could be improved with real NLP or ML techniques — but that was out of scope for a 3-hour task.
+In production, this could be improved with real NLP or ML techniques — but that was out of scope for a ~3-hour task.
 
 ---
